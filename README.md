@@ -1,5 +1,9 @@
-# JSP-Apple-Wed-page
+# JSP-Apple-Wed-page(jQuery문으로 구현하는 웹페이지)
+
 ## 웹페이지 주소 http://127.0.0.1:5500/NewFile.html
+## 참고 화면
+![image](https://user-images.githubusercontent.com/102803326/176826440-2f415e83-1a22-4238-b832-01e5d9834a3f.png)
+
 ## 구현 화면 
 ![image](https://user-images.githubusercontent.com/102803326/176816623-28bbc497-6d8f-4bc6-958c-77fee56aac39.png)
 
