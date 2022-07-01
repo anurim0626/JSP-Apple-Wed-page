@@ -1,4 +1,4 @@
-# J-Apple-Wed-page(jQuery문으로 구현하는 웹페이지)
+# Apple-Wed-page(jQuery문으로 구현하는 웹페이지)
 
 ## 웹페이지 주소 http://127.0.0.1:5500/NewFile.html
 ## 참고 화면
