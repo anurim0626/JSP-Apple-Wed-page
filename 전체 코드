@@ -1,0 +1,307 @@
+-HTML-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer="defer"></script>
+<script src="js/script.js" defer="defer" ></script>
+</head>
+<body>
+<div id="page">
+	<header>
+		<div id="logo">
+			
+			<img src="img/logo copy.png">
+		
+		</div>
+		<div id="top">
+			  <ul class="main-menu">
+                <li>
+                    <a href="#" >iPhone</a>
+                    <ul class="sub"> 
+                        <li><a href="#">iPhone14</a></li>
+                        <li><a href="#">iPhone13</a></li>
+                        <li><a href="#">iPhone12</a></li>
+                        <li><a href="#">iPhone11</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" >iPad </a>
+                    <ul class="sub">
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPad mini</a></li>
+                        <li><a href="#">iPad pro</a></li>
+                        <li><a href="#">iPad air</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" >MacBook</a>
+                    <ul class="sub">
+                        <li><a href="#">MacBook pro</a></li>
+                        <li><a href="#">MacBook air</a></li>
+                       
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" >iMac</a>
+                    <ul class="sub">
+                        <li onclick="winOpen1()"><a href="#">iMac Pro</a></li>
+                        <li onclick="winOpen2()"><a href="#">iMac</a></li>
+                    </ul>
+                </li>
+				<li>
+                    <a href="#" >Apple Watch </a>
+                    <ul class="sub">
+                        <li><a href="#">Apple Watch 8</a></li>
+                        <li><a href="#">Apple Watch 7</a></li>
+                        <li><a href="#">Apple Watch 6</a></li>
+                        <li><a href="#">Apple Watch SE</a></li>
+                    </ul>
+                </li>
+				<li>
+                    <a href="#" >AirPods</a>
+                    <ul class="sub">
+                        <li><a href="#">AirPods(1세대)</a></li>
+                        <li><a href="#">AirPods(2세대)</a></li>
+                        <li><a href="#">>AirPods(3세대)</a></li>
+                        <li><a href="#">AirPods por</a></li>
+                    </ul>
+                </li>
+             </ul>
+		</div>
+	</header>
+	<div class="clear"></div>  <!--	float 속성 해제 -->	
+	
+	<section>
+             <div class="imgs" >
+                 <img src="img/apple mex.jpg">
+                 <img src="img/apple note.jpg">
+                 <img src="img/apply pon.jpg ">
+                 <img src="img/apple wh.jpg">
+                 <img src="img/에어팟 .png">
+             </div>
+	</section>
+	
+	<div class="clear"></div>  <!--	float 속성 해제 -->
+	
+	<div id="wrap">
+	    <div class="notice">	        
+	        <table class="table">
+	            <tr>
+	                <th>제품</th>
+	                <th>기종</th>
+	            </tr>
+	            <tr>
+	                <td><a href="#"><img src="img/iphone13.png"></a></td>
+	                <td>iphone13</td>
+	            </tr>
+	            <tr>
+	                <td><a href="#"> <img src="img/AIrp.jpg"></a></td>
+	                <td>AirPods</td>
+	            </tr>
+	            <tr>
+	                <td><a href="#"><img src="img/ipad-pro-12.jpg"></a></td>
+	                <td>ipad-pro-12</td>
+	            </tr>
+	            <tr>
+	                <td><a href="#"><img src="img/imac.jpg"></a></td>
+	                <td>iMac</td>
+	            </tr>
+	            <tr>
+	                <td><a href="#"><img src="img/mac buk.jpg"></a></td>
+	                <td>MacBook Por</td>
+	            </tr>
+	        </table>
+	    </div>
+    </div>
+	<div class="clear"></div>  <!--	float 속성 해제 -->	
+	
+		<footer>
+		<div id="address" align="center">
+			<img src="img/address.png">
+		</div>
+		
+	</footer>
+</div> <!-- 아이디 page의 끝 -->
+</body>
+</html>
+
+-CSS-
+@charset "UTF-8";
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+.clear {
+	clear: both;
+    }
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#page {
+	width: 995px;
+	margin: 0 auto;
+}
+header {
+	width: 995px;
+	height: 120px;
+	margin-top: 10px;
+	
+}
+#logo {
+    position: relative;
+	float: left;
+    margin-top: 20px;
+    left: 20%;
+    
+}
+
+#top {
+	float: right;
+	margin: 20px 20px 0 0;
+}
+
+.main-menu {	
+	width: 950px;
+	height: 40px;
+	margin-top: 10px;	
+	background-color: #8d8d8d;   
+    line-height: 40px;
+    color:white;
+     
+}
+
+.main-menu li{
+    float: left;
+    width: 150px;
+    text-align: center;   
+} 
+
+.main-menu li:hover{
+    color:blueviolet;
+    background-color: white;
+   
+}
+
+.sub {
+	position: absolute;
+	width: 150px;    
+	background-color: #aabbdd;
+	display: none;
+	z-index: 1;
+}
+
+.sub li:hover {
+	background-color: #ddbbaa;    
+    }
+    
+section {
+    width: 995px;
+    height: 240px;
+	float:left;
+	margin-top: 10px;
+    align-content: center
+}
+
+.imgs{
+    width: 995px;
+    height: 559px;
+    position: absolute;
+    overflow: hidden;
+    
+      }
+.imgs>img {
+    position: absolute;
+    transition: all 2s; 
+}
+
+ span{
+    color: #BDBDBD;
+}
+
+.notice{
+    width: 995px;
+    margin-top: 10px;    
+    float: left;
+}
+
+h2{
+    text-align: center;
+}
+.table{
+    width: 995px;
+    border-collapse: collapse;
+    font-size: 1rem; 
+    color: #888;    
+    margin-top: 450px;
+}
+
+.table tr>th{
+    padding: 5px;
+}
+.table tr>td{
+    padding: 5px;
+    text-align:center;
+}
+.table tr:nth-child(2n){
+    background-color: #cccccc;
+}
+ footer{
+	width: 995px;
+    height: 130px;
+	border-top: solid 1px #cccccc;
+	margin-top: 20px;
+}
+ #address{
+	
+	margin: 30px 0 0 50px;
+}
+
+-js-
+$(".main-menu > li").mouseover(function(){
+    $(this).children(".sub").stop().slideDown();
+//    $(".sub").stop().slideDown();
+})
+$(".main-menu > li").mouseleave(function(){
+    $(this).children(".sub").stop().slideUp();
+//    $(".sub").stop().slideUp();
+})
+
+start();
+var imgs = 5;
+var now = 0;
+
+function start(){
+    $(".imgs>img").eq(0).siblings().css({"margin-left":"-2000px"});
+    setInterval(function(){slide();},2000);
+}
+
+function slide(){
+    now = now == imgs?0:now+=1;
+    $(".imgs>img").eq(now-1).css({"margin-left":"-2000px"});
+    $(".imgs>img").eq(now).css({"margin-left":"0px"});
+}
+
+function winOpen1(){
+    var win1 = window.open('login.html','child1','toolbar = no, location = no , status = no, menubar = no, menuber = no, resizable = no, scrollbars = no, width = 300, height = 200')
+}
+
+function winOpen2(){
+    var win2 = window.open('join_2.html','child2','toolbar = no, location = no , status = no, menubar = no, menuber = no, resizable = no, scrollbars = no, width = 850, height = 700')
+}
+
+
+
+
+
+
+
